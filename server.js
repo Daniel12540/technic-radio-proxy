@@ -7,6 +7,7 @@ const STATIONS = {
     "eska": "[https://stream.open.fm/321](https://stream.open.fm/321)",
     "rmf": "[https://rs102-krk.rmftv.pl/RMFFM48](https://rs102-krk.rmftv.pl/RMFFM48)",
     "lofi": "[https://stream.zeno.fm/f3wvbbqmdg8uv](https://stream.zeno.fm/f3wvbbqmdg8uv)"
+    "antyradio": "https://n-4-2.dcs.redcdn.pl/sc/o2/Eurozet/live/antyradio.livx?audio=5"
 };
 
 app.use((req, res, next) => {
