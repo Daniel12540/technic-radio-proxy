@@ -8,6 +8,7 @@ const STATIONS = {
     "rmf": "https://rs102-krk.rmftv.pl/RMFFM48",
     "lofi": "https://stream.zeno.fm/f3wvbbqmdg8uv",
     "antyradio": "https://n-4-2.dcs.redcdn.pl/sc/o2/Eurozet/live/antyradio.livx?audio=5",
+    "zet": "https://stream.radiozet.pl/radiozet.mp3"
 };
 
 app.use((req, res, next) => {
