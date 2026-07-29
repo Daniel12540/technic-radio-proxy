@@ -6,8 +6,7 @@ const PORT = process.env.PORT || 3000;
 const STATIONS = {
     "eska": "[https://stream.open.fm/321](https://stream.open.fm/321)",
     "rmf": "[https://rs102-krk.rmftv.pl/RMFFM48](https://rs102-krk.rmftv.pl/RMFFM48)",
-    "lofi": "[https://stream.zeno.fm/f3wvbbqmdg8uv](https://stream.zeno.fm/f3wvbbqmdg8uv)"
-    "antyradio": "[https://open.fm/stacje-radiowe/antyradio?pvclid=01KYQV536NYM0MYEFTC91070JY)"
+    "lofi": "[https://stream.zeno.fm/f3wvbbqmdg8uv](https://stream.zeno.fm/f3wvbbqmdg8uv)
 };
 
 app.use((req, res, next) => {
