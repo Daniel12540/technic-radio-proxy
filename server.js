@@ -26,7 +26,7 @@ app.get('/radio/:stationId', async (req, res) => {
     const streamUrl = STATIONS[stationId];
 
     if (!streamUrl) {
-        return res.status(404).json({ error: "Stacja radiowa nie istnieje w konfiguracji!" });
+        return res.status(404).json({ error: "The radio station does not exist in the configuration!" });
     }
 
     try {
@@ -40,11 +40,11 @@ app.get('/radio/:stationId', async (req, res) => {
         response.data.pipe(res);
 
     } catch (error) {
-        console.error(`Błąd podczas pobierania strumienia [${stationId}]:`, error.message);
-        res.status(500).send("Błąd połączenia ze stacją radiową.");
+        console.error(`Error while downloading [${stationId}]:`, error.message);
+        res.status(500).send("Radio station connection error.");
     }
 });
 
 app.listen(PORT, () => {
-    console.log(`🚀 Technic Radio Proxy działa na porcie ${PORT}`);
+    console.log(`🚀 Technic Radio Proxy runs on port ${PORT}`);
 });
